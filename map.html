@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Integration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="name-corner">Phase 2</div>
+    <div id="searchBarContainer">
+        <input type="text" id="searchBar" placeholder="Search Location" aria-label="Search Location">
+        <button id="searchButton">Search</button>
+    </div>
+    <div id="map"></div>
+    
+    <!-- Notification Icon and Panel -->
+    <div id="notificationIcon" class="notification-icon">🔔</div>
+<div id="notificationPanel" class="notification-panel" style="display: none;">
+    <h3>Search History</h3>
+    <div id="notificationsList"></div>
+</div>
+
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script type="module" src="auth.js"></script>
+</body>
+</html>
